@@ -1,0 +1,150 @@
+{
+	"Bidi Margin Left" : {
+		"prefix": "biMarLe",
+		"body": "@include bidi-props(margin-left, px, margin-right, unset);"
+	},
+	"Bidi Margin Right" : {
+		"prefix": "biMarRi",
+		"body": "@include bidi-props(margin-right, px, margin-left, unset);"
+	},
+	"Bidi Margin X" : {
+		"prefix": "biMarX",
+		"body": [
+			"@include bidi-values(margin-left, px, px);",
+			"@include bidi-values(margin-right, px, px);"
+		]
+	},
+	"Bidi Margin All" : {
+		"prefix": "biMarAll",
+		"body": [
+			"margin-bottom: px;",
+			"margin-top: px;",
+			"@include bidi-values(margin-left, px, px);",
+			"@include bidi-values(margin-right, px, px);"
+		]
+	},
+	"Bidi Padding Left" : {
+		"prefix": "biPadLe",
+		"body": "@include bidi-props(padding-left, px, padding-right, unset);"
+	},
+	"Bidi Padding Right" : {
+		"prefix": "biPadRi",
+		"body": "@include bidi-props(padding-right, px, padding-left, unset);"
+	},
+	"Bidi Padding X" : {
+		"prefix": "biPadX",
+		"body": [
+			"@include bidi-values(padding-left, px, px);",
+			"@include bidi-values(padding-right, px, px);"
+		]
+	},
+	"Bidi Padding All" : {
+		"prefix": "biPadAll",
+		"body": [
+			"padding-bottom: px;",
+			"padding-top: px;",
+			"@include bidi-values(padding-left, px, px);",
+			"@include bidi-values(padding-right, px, px);"
+		]
+	},
+	"Bidi Float Left" : {
+		"prefix": "biFloLe",
+		"body": "@include bidi-values(float, left, right);"
+	},
+	"Bidi Float Right" : {
+		"prefix": "biFloRi",
+		"body": "@include bidi-values(float, right, left);"
+	},
+	"Bidi Translate" : {
+		"prefix": "biTran",
+		"body" : "@include bidi-values(transform, translateX(100%), translateX(-100%));"
+	},
+	"Bidi Gradient Left" : {
+		"prefix": "biGraLe",
+		"body": [
+			"@include bidi-values(background,  linear-gradient(to right, ),  (to left, ));",
+			"@include bidi-values(background, -moz-linear-gradient(left, ), -moz-linear-gradient(right, ));",
+			"@include bidi-values(background, -webkit-linear-gradient(left, ), -webkit-linear-gradient(right, ));"
+		]
+	},
+	"Bidi Gradient Right" : {
+		"prefix": "biGraRi",
+		"body": [
+			"@include bidi-values(background,  linear-gradient(to left, ),  (to right, ));",
+			"@include bidi-values(background, -moz-linear-gradient(right, ), -moz-linear-gradient(left, ));",
+			"@include bidi-values(background, -webkit-linear-gradient(right, ), -webkit-linear-gradient(left, ));"
+		]
+	},
+	"Bidi Left" : {
+		"prefix": "biLe",
+		"body": "@include bidi-props(left, px, right, unset);"
+	},
+	"Bidi Right" : {
+		"prefix": "biRi",
+		"body": "@include bidi-props(right, px, left, unset);"
+	},
+	"Bidi X" : {
+		"prefix": "biX",
+		"body": [
+			"@include bidi-values(left, px, px);",
+			"@include bidi-values(right, px, px);"
+		]
+	},
+	"Bidi Border Left" : {
+		"prefix": "biBorLe",
+		"body": "@include bidi-props(border-left, px, border-right, unset);"
+	},
+	"Bidi Border Right" : {
+		"prefix": "biBorRi",
+		"body": "@include bidi-props(border-right, px, border-left, unset);"
+	},
+	"Bidi Border X" : {
+		"prefix": "biBorX",
+		"body": [
+			"@include bidi-values(border-left, px, px);",
+			"@include bidi-values(border-right, px, px);"
+		]
+	},
+	"Bidi Border All" : {
+		"prefix": "biBorAll",
+		"body": [
+			"border-top: px;",
+			"border-bottom: px;",
+			"@include bidi-values(border-left, px, px);",
+			"@include bidi-values(border-right, px, px);"
+		]
+	},
+	"Bidi Border Radius All" : {
+		"prefix": "biBorRadAll",
+		"body" : [
+			"@include bidi-values(border-top-left-radius, px, px);",
+			"@include bidi-values(border-top-right-radius, px, px);",
+			"@include bidi-values(border-bottom-right-radius, px, px);",
+			"@include bidi-values(border-bottom-left-radius, px, px);"
+		]
+	},
+	"Bidi Border Width Left" : {
+		"prefix": "biBorWidLe",
+		"body": "@include bidi-props(border-left-width, px, border-right-width, unset);"
+	},
+	"Bidi Border Width Right" : {
+		"prefix": "biBorWidRi",
+		"body": "@include bidi-props(border-right-width, px, border-left-width, unset);"
+	},
+	"Bidi Border Width X" : {
+		"prefix": "biBorWidX",
+		"body": [
+			"@include bidi-values(border-left-width, px, px);",
+			"@include bidi-values(border-right-width, px, px);"
+		]
+	},
+	"Bidi Border Width All" : {
+		"prefix": "biBorWidAll",
+		"body" : [
+			"border-top-width: px;",
+			"border-bottom-width: px;",
+			"@include bidi-values(border-left-width, px, px);",
+			"@include bidi-values(border-right-width, px, px);"
+		]
+	}
+}
