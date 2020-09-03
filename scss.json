@@ -1,5 +1,5 @@
 {
-	"Bidi Margin left" : {
+	"Bidi Margin Left" : {
 		"prefix": "biMarLe",
 		"body": "@include bidi-props(margin-left, $1px, margin-right, unset);"
 	},
@@ -109,10 +109,10 @@
 	"Bidi Border All" : {
 		"prefix": "biBorAll",
 		"body": [
-			"margin-bottom: $3px;",
-			"margin-top: $4px;",
-			"@include bidi-values(margin-left, $1px, $2px);",
-			"@include bidi-values(margin-right, $2px, $1px);"
+			"border-bottom: $3px;",
+			"border-top: $4px;",
+			"@include bidi-values(border-left, $1px, $2px);",
+			"@include bidi-values(border-right, $2px, $1px);"
 		]
 	},
 	"Bidi Border Radius All" : {
