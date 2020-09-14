@@ -87,8 +87,8 @@
 	"Bidi X" : {
 		"prefix": "biX",
 		"body": [
-			"@include bidi-values(left, px, px);",
-			"@include bidi-values(right, px, px);"
+			"@include bidi-values(left, $1px, $2px);",
+			"@include bidi-values(right, $2px, $1px);"
 		]
 	},
 	"Bidi Border Left" : {
@@ -142,8 +142,8 @@
 	"Bidi Border Width All" : {
 		"prefix": "biBorWidAll",
 		"body" : [
-			"border-top-width: px;",
-			"border-bottom-width: px;",
+			"border-bottom-width: $3px;",
+			"border-top-width: $4px;",
 			"@include bidi-values(border-left-width, $1px, $2px);",
 			"@include bidi-values(border-right-width, $2px, $1px);"
 		]
